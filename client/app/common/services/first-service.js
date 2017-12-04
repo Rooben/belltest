@@ -3,7 +3,7 @@
  */
 import angular from 'angular';
 
-class TeamFactory {
+class TeamService {
   constructor($http){
     'ngInject';
     this.$http = $http;
@@ -19,4 +19,4 @@ class TeamFactory {
   }
 }
 
-export default TeamFactory;
+export default TeamService;

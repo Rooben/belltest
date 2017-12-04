@@ -1,15 +1,15 @@
-import TeamFactory from '../../common/services/first-service';
+import TeamService from '../../common/services/first-service';
 
 class AboutController {
-  constructor(TeamFactory) {
+  constructor(TeamService) {
     'ngInject';
-    this.TeamFactory = TeamFactory;
+    this.TeamService = TeamService;
     this.name = 'about';
     this.listings = [];
   }
 
   returnItems (){
-    this.listings = this.TeamFactory.getItems();
+    this.listings = this.TeamService.getItems();
   }
 
 }

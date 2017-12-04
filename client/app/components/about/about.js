@@ -1,7 +1,7 @@
 import angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
 import aboutComponent from './about.component';
-import TeamFactory from '../../common/services/first-service';
+import TeamService from '../../common/services/first-service';
 
 let aboutModule = angular.module('about', [
   uiRouter
@@ -17,7 +17,7 @@ let aboutModule = angular.module('about', [
 })
 
 .component('about', aboutComponent)
-.service('TeamFactory', TeamFactory)
+.service('TeamService', TeamService)
 .name;
 
 export default aboutModule;
