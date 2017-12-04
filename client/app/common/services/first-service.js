@@ -10,10 +10,9 @@ class TeamService {
   }
 
   getItems(){
-    return this.$http.get('https://drive.google.com/file/d/0Byt0rakzaB6bNXM0RW1ua3owY1U/view?usp=sharing').then((data)=>{
+    return this.$http.get('https://jsonplaceholder.typicode.com' + '/posts/1').then((data)=>{
       console.log(data);
-    })
-    .catch((error)=>{
+    }).catch((error)=>{
       console.error(error);
     });
   }
