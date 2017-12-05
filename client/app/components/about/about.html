@@ -4,6 +4,20 @@
   About us.
 </section>
 
-<div><pre>{{$ctrl.firstTableValues | json}} </pre></div>
-<hr/>
-<div><pre>{{$ctrl.secondTableValues | json}} </pre> </div>
+<div>
+  <span> </span>
+  <table border="1" width="100%">
+    <thead>
+      <tr>
+        <th width="2.8571428571%" ng-repeat="header in $ctrl.firstTableValues.data.Headers">{{header}}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr width="100%" ng-repeat="rrow in $ctrl.firstTableValues.data.Statistics">
+        <td ng-repeat="dat in rrow track by $index">{{dat}}</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

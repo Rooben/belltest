@@ -16,11 +16,15 @@ class AboutController {
     this.firstTableValues.then((firstTableData)=>{
       console.log(firstTableData);
       this.firstTableValues = firstTableData;
+    }).catch((error)=>{
+      console.log(error);
     });
 
     this.secondTableValues.then((secondTableData)=>{
       console.log(secondTableData);
       this.secondTableValues = secondTableData;
+    }).catch((error)=>{
+      console.log(error);
     });
   }
 
