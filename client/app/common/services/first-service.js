@@ -9,12 +9,14 @@ class TeamService {
     this.$http = $http;
   }
 
-  getItems(){
-    return this.$http.get('https://jsonplaceholder.typicode.com' + '/posts/1').then((data)=>{
-      console.log(data);
-    }).catch((error)=>{
-      console.error(error);
-    });
+  getFirstTable(){
+    console.log('Getting first Table results...');
+    return this.$http.get('/app/common/data/first-table-rawdata.json');
+  }
+
+  getSecondTable(){
+    console.log('Getting second Table results...');
+    return this.$http.get('/app/common/data/second-table-rawdata.json');
   }
 }
 

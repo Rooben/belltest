@@ -5,13 +5,28 @@ class AboutController {
     'ngInject';
     this.TeamService = TeamService;
     this.name = 'about';
-    this.listings = [];
+    this.firstTableValues = null;
+    this.secondTableValues = null;
   }
 
-  returnItems (){
-    this.listings = this.TeamService.getItems();
+  GenerateDataTables (){
+    this.firstTableValues = this.TeamService.getFirstTable();
+    this.secondTableValues = this.TeamService.getSecondTable();
+
+    this.firstTableValues.then((firstTableData)=>{
+      console.log(firstTableData);
+      this.firstTableValues = firstTableData;
+    });
+
+    this.secondTableValues.then((secondTableData)=>{
+      console.log(secondTableData);
+      this.secondTableValues = secondTableData;
+    });
   }
 
+  $onInit(){
+    this.GenerateDataTables ();
+  }
 }
 
 export default AboutController;
