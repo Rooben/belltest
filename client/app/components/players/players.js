@@ -1,25 +1,25 @@
 import angular from 'angular';
 import uiRouter from '@uirouter/angularjs';
-import aboutComponent from './about.component';
+import playersComponent from './players.component';
 import TableMove from '../../common/directives/table-move-directive'
 
-let aboutModule = angular.module('about', [
+let playersModule = angular.module('players', [
   uiRouter
 ])
 
 .config(($stateProvider) => {
   "ngInject";
   $stateProvider
-    .state('about', {
+    .state('players', {
       url: '/players',
-      component: 'about'
+      component: 'players'
     });
 })
 
 
 
-.component('about', aboutComponent)
+.component('players', playersComponent)
 .directive('tableMove', TableMove)
 .name;
 
-export default aboutModule;
+export default playersModule;

@@ -1,11 +1,11 @@
-import template from './about.html';
-import controller from './about.controller';
-import './about.scss';
+import template from './players.html';
+import controller from './players.controller';
+import './players.scss';
 
-let aboutComponent = {
+let playersComponent = {
   bindings: {},
   template,
   controller
 };
 
-export default aboutComponent;
+export default playersComponent;

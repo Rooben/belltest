@@ -1,10 +1,10 @@
 import TeamService from '../../common/services/first-service';
 
-class AboutController {
+class PlayersController {
   constructor(TeamService) {
     'ngInject';
     this.TeamService = TeamService;
-    this.name = 'about';
+    this.name = 'players';
     this.firstTableValues = null;
     this.secondTableValues = null;
   }
@@ -34,4 +34,4 @@ class AboutController {
   }
 }
 
-export default AboutController;
+export default PlayersController;

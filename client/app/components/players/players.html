@@ -22,3 +22,28 @@
   <img table-move id="arrow-up" class="arrow-up" src="/app/images/arrRight.png" />
   <img table-move id="arrow-down" class="arrow-down" src="/app/images/arrRight.png" />
 </div>
+
+
+<div class="outer-table-container2">
+  <div class="table-container" id="table-container2">
+    <table class="actual-table" id="actual-table2" border="1" bordercolor="#d9dbde" width="100%" cellpadding="5">
+      <thead>
+      <tr class="tablerow">
+        <th width="2.8571428571%" ng-repeat="header in $ctrl.secondTableValues.data.Headers">{{header}}</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <tr ng-class-odd="'odd'" ng-class-even="'even'" width="100%" ng-repeat="rrow in $ctrl.secondTableValues.data.Statistics">
+        <td width="2.8571428571%" ng-repeat="dat in rrow track by $index">{{dat}}</td>
+      </tr>
+      </tbody>
+
+    </table>
+  </div>
+  <img table-move id="arrow-left2" class="arrow-left" src="/app/images/arrLeft.png" />
+  <img table-move id="arrow-right2" class="arrow-right" src="/app/images/arrRight.png" />
+  <img table-move id="arrow-up2" class="arrow-up" src="/app/images/arrRight.png" />
+  <img table-move id="arrow-down2" class="arrow-down" src="/app/images/arrRight.png" />
+</div><br/><br/>
+

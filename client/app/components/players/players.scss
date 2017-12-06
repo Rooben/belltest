@@ -1,5 +1,5 @@
 @import "../../common/common.scss";
-.about {
+.players {
   color: red;
 }
 
@@ -11,7 +11,7 @@ table{
   text-align: center;
 }
 
-.outer-table-container{
+.outer-table-container, .outer-table-container2{
   td, th {
     padding: 11px;
     font-size: 13px;

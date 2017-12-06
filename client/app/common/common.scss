@@ -17,7 +17,7 @@ html body {
    width: 100%;
 }
 
-.outer-table-container{
+.outer-table-container, .outer-table-container2{
    position: absolute;
    max-width: 1240px;
    width: 100%;
@@ -27,11 +27,19 @@ html body {
    height: 60%;
    border-radius: 5px;
    border: solid 1px #cccccc;
-   top: 130px;
+
    background-size: 100% auto;
    background-position: center center;
    background-repeat: no-repeat;
 }
+.outer-table-container{
+   top: 141px;
+}
+.outer-table-container2{
+   top: 700px;
+   margin-bottom: 30px;
+}
+
 .table-container {
    max-width: 860px;
    width: 100%;
@@ -94,28 +102,28 @@ html body {
 }
 
 @media(max-width: 1242px){
-   .outer-table-container{
+   .outer-table-container, .outer-table-container2{
       max-width: 900px;
    }
 }
 @media(max-width: 900px){
-   .outer-table-container{
+   .outer-table-container, .outer-table-container2{
       max-width: 700px;
    }
 }
 @media(max-width: 700px){
-   .outer-table-container{
+   .outer-table-container, .outer-table-container2{
       max-width: 500px;
    }
 }
 @media(max-width: 500px){
-   .outer-table-container{
+   .outer-table-container, .outer-table-container2{
       max-width: 300px;
    }
 }
 
 @media(max-width: 300px){
-   .outer-table-container{
+   .outer-table-container, .outer-table-container2{
       max-width: 200px;
    }
 }
