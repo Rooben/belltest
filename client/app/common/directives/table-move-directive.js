@@ -1,7 +1,7 @@
 import { TweenLite } from 'gsap';
 
 function tableMoveDirective(){
-  function moveTable1(dynamicObject, element){
+  function moveTable(dynamicObject, element){
     var parentContainer = element.parent()[0].querySelector('.actual-table');
     TweenLite.to(parentContainer, 0.4, dynamicObject);
   }
@@ -25,7 +25,7 @@ function tableMoveDirective(){
             break;
         }
 
-        moveTable1(dynamicObj, element);
+        moveTable(dynamicObj, element);
       })
     }
   };
