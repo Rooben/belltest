@@ -28,6 +28,7 @@ class AboutController {
     });
   }
 
+
   $onInit(){
     this.GenerateDataTables ();
   }

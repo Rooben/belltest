@@ -1,8 +1,3 @@
-/**
- * Created by Roland on 12/3/2017.
- */
-import angular from 'angular';
-
 class TeamService {
   constructor($http){
     'ngInject';

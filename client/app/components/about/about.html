@@ -1,23 +1,24 @@
 <navbar></navbar>
-<h1>{{ $ctrl.name }}</h1>
-<section>
-  About us.
-</section>
 
-<div>
-  <span> </span>
-  <table border="1" width="100%">
-    <thead>
-      <tr>
-        <th width="2.8571428571%" ng-repeat="header in $ctrl.firstTableValues.data.Headers">{{header}}</th>
-      </tr>
-    </thead>
+<div class="outer-table-container">
+  <div class="table-container" id="table-container">
+    <table class="actual-table" id="actual-table" border="1" bordercolor="#d9dbde" width="100%" cellpadding="5">
+      <thead>
+        <tr class="tablerow">
+          <th width="2.8571428571%" ng-repeat="header in $ctrl.firstTableValues.data.Headers">{{header}}</th>
+        </tr>
+      </thead>
 
-    <tbody>
-      <tr width="100%" ng-repeat="rrow in $ctrl.firstTableValues.data.Statistics">
-        <td ng-repeat="dat in rrow track by $index">{{dat}}</td>
-      </tr>
-    </tbody>
+      <tbody>
+        <tr ng-class-odd="'odd'" ng-class-even="'even'" width="100%" ng-repeat="rrow in $ctrl.firstTableValues.data.Statistics">
+          <td width="2.8571428571%" ng-repeat="dat in rrow track by $index">{{dat}}</td>
+        </tr>
+      </tbody>
 
-  </table>
+    </table>
+  </div>
+  <img table-move id="arrow-left" class="arrow-left" src="/app/images/arrLeft.png" />
+  <img table-move id="arrow-right" class="arrow-right" src="/app/images/arrRight.png" />
+  <img table-move id="arrow-up" class="arrow-up" src="/app/images/arrRight.png" />
+  <img table-move id="arrow-down" class="arrow-down" src="/app/images/arrRight.png" />
 </div>
