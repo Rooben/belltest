@@ -15,8 +15,8 @@ describe('About', () => {
 
   describe('Module', () => {
     // top-level specs: i.e., routes, injection, naming
-    it('About component should be visible when navigates to /about', () => {
-      $location.url('/about');
+    it('About component should be visible when navigates to /players', () => {
+      $location.url('/players');
       $rootScope.$digest();
       expect($state.current.component).to.eq('about');
     });
@@ -42,7 +42,7 @@ describe('About', () => {
 
     beforeEach(() => {
       scope = $rootScope.$new();
-      template = $compile('<about></about>')(scope);
+      template = $compile('<players></players>')(scope);
       scope.$apply();
     });
 

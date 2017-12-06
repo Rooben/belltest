@@ -11,6 +11,14 @@ table{
   text-align: center;
 }
 
+.outer-table-container{
+  td, th {
+    padding: 11px;
+    font-size: 13px;
+  }
+}
+
+
 .even{
   background-color: #e5e6ea;
 }
